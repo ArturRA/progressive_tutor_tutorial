@@ -1,11 +1,10 @@
 import React from "react";
 import Head from "next/head";
-import CardRow from "../components/CardRow/CardRow";
-import { getPageMetadata } from "../utils/pageMetadata";
+import CardRow from "../../components/CardRow/CardRow";
+import { getPageMetadata } from "../../utils/pageMetadata";
+import styles from "../index.module.css";
 
-import styles from "./index.module.css";
-
-export default function Home() {
+export default function DesktopPage() {
   const { pageTitle, pageDescription } = getPageMetadata("ProgressiveTutor");
 
   return (
@@ -17,7 +16,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.container}>
-          <h1 className={styles.title}>ProgressiveTutor</h1>
+          <h1 className={styles.title}>ProgressiveTutor: Sistema Desktop</h1>
           <h2 className={styles.subtitle}>
             Description of what will be talked about on this page Description
             of what will be talked about on this page Description of what will
@@ -30,22 +29,19 @@ export default function Home() {
           <CardRow
             links={[
               {
-                title: "Sistema Desktop",
-                description: "Tutorial de como fazer um sistema completo contendo front-end, back-end,"
-                + "uma API para fazer a comunicação entre os dois e um sistema de autenticação voltado para aplicações desktop.",
+                title: "Anterior",
+                description: "Voltar para a pagina anterior",
                 url: "/Desktop/01",
               },
               {
-                title: "Sistema MultiPlataforma",
-                description: "Tutorial de como fazer um sistema completo contendo front-end, back-end,"
-                + "uma API para fazer a comunicação entre os dois e um sistema de autenticação voltado para aplicações multiPlataforma.",
-                url: "/MultiPlataforma/01",
+                title: "Home",
+                description: "Voltar para a seleção de tipo de tecnologia",
+                url: "/",
               },
               {
-                title: "Sistema Mobile",
-                description: "Tutorial de como fazer um sistema completo contendo front-end, back-end,"
-                + "uma API para fazer a comunicação entre os dois e um sistema de autenticação voltado para aplicações mobile.",
-                url: "/Mobile/01",
+                title: "Proximo",
+                description: "Ir para a pagina seguinte",
+                url: "/Desktop/02",
               },
             ]}
           />

@@ -4,7 +4,7 @@ import CardRow from "../../components/CardRow/CardRow";
 import { getPageMetadata } from "../../utils/pageMetadata";
 import styles from "../index.module.css";
 
-export default function MultiPlataformaPage() {
+export default function MobilePage() {
   const { pageTitle, pageDescription } = getPageMetadata("ProgressiveTutor");
 
   return (
@@ -16,7 +16,7 @@ export default function MultiPlataformaPage() {
       </Head>
       <main className={styles.main}>
         <div className={styles.container}>
-          <h1 className={styles.title}>ProgressiveTutor: Sistema MultiPlataforma</h1>
+          <h1 className={styles.title}>ProgressiveTutor: Sistema Mobile</h1>
           <h2 className={styles.subtitle}>
             Description of what will be talked about on this page Description
             of what will be talked about on this page Description of what will
@@ -31,7 +31,7 @@ export default function MultiPlataformaPage() {
               {
                 title: "Anterior",
                 description: "Voltar para a pagina anterior",
-                url: "/",
+                url: "/Mobile/01",
               },
               {
                 title: "Home",
@@ -41,7 +41,7 @@ export default function MultiPlataformaPage() {
               {
                 title: "Proximo",
                 description: "Ir para a pagina seguinte",
-                url: "/MultiPlataforma/02",
+                url: "/Mobile/02",
               },
             ]}
           />
