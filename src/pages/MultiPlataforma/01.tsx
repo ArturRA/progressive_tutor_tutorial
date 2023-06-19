@@ -1,11 +1,10 @@
 import React from "react";
 import Head from "next/head";
-import CardRow from "../components/CardRow/CardRow";
-import { getPageMetadata } from "../utils/pageMetadata";
+import CardRow from "../../components/CardRow/CardRow";
+import { getPageMetadata } from "../../utils/pageMetadata";
+import styles from "../index.module.css";
 
-import styles from "./index.module.css";
-
-export default function Home() {
+export default function Page01() {
   const { pageTitle, pageDescription } = getPageMetadata("ProgressiveTutor");
 
   return (
