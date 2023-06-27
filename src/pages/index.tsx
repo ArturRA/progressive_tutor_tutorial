@@ -19,13 +19,8 @@ export default function Home() {
         <div className={styles.container}>
           <h1 className={styles.title}>ProgressiveTutor</h1>
           <h2 className={styles.subtitle}>
-            Description of what will be talked about on this page Description
-            of what will be talked about on this page Description of what will
-            be talked about on this page Description of what will be talked
-            about on this page Description of what will be talked about on this
-            page Description of what will be talked about on this page
-            Description of what will be talked about on this page Description
-            of what will be talked about on this page
+          Este é o tutorial MultiPlataforma denominado ProgressiveTutor que foi desenvolvido durante o TCC do aluno Artur R.A. 
+          da Universidade Federal de Santa Catarina (UFSC).
           </h2>
           <CardRow
             links={[
